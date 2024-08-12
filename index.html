@@ -120,7 +120,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-3">
-                                    <form id="formme">
+                                    <form id="formme" action="#home" onsubmit="return validasi()">
                                         <h3>Contact</h3>
                                         <div class="mb-3 mt-3">
                                             <label for="nama" class="form-label">Nama:</label>
@@ -219,6 +219,8 @@
             } else {
                 alert('kirim pesan dibatalkan');
             }
+
+            return true;
         }
 
 
